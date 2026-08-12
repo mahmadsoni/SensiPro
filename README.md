@@ -1,74 +1,44 @@
 # SensiPro
 
-Мушовири ҳассосияти Free Fire — барномаи Python (Kivy), ки дастгоҳи шуморо
-месанҷад ва ду профили ҳассосияти тавсиявӣ ("Ҷанги пеш" ва "Ҷанги дур")
-тавлид мекунад.
+Android утилитаи таҳлили дастгоҳ ва тавсияи танзимоти сенситивӣ (Kotlin + Jetpack Compose).
+Барномаи firibgar (cheat) нест — танҳо дастгоҳро таҳлил карда, тавсия медиҳад.
 
-> Барнома ҳеҷ файли бозиро таъғйир намедиҳад — он танҳо арзишҳои
-> тавсияшударо нишон медиҳад, то шумо худатон онҳоро дар танзимоти
-> Free Fire дастӣ ворид кунед.
+## Технология
 
-## Сохти лоиҳа
+- Kotlin, Jetpack Compose, Material 3
+- MVVM + Repository pattern
+- DataStore Preferences (танзимот ва таърих)
+- Navigation Compose
+- Забонҳо: Тоҷикӣ (пешфарз), Русӣ, Англисӣ
+
+## Сохтор
 
 ```
-SensiPro/
-├── main.py                          # Барномаи асосии Kivy
-├── buildozer.spec                   # Конфигуратсия барои сохтани APK
-├── .github/workflows/build.yml      # Сохтмони худкори APK дар GitHub
-└── README.md
+app/src/main/java/com/sensipro/app/
+  MainActivity.kt, SensiProApplication.kt
+  device/        — таҳлили дастгоҳ (Build, DisplayMetrics, ActivityManager, StatFs)
+  sensitivity/   — муҳаррики детерминистии тавсияи сенситивӣ
+  settings/      — DataStore барои танзимот
+  history/       — DataStore барои таърих
+  data/          — контейнери DI
+  navigation/    — NavGraph
+  ui/            — экранҳо, тема, компонентҳо
 ```
 
-## Насб кардани лоиҳа дар Termux ва фиристодан ба GitHub
+## Сохтани APK дар GitHub Actions
 
-1. Термуксро навсозӣ кунед ва git-ро насб кунед:
-   ```bash
-   pkg update && pkg upgrade -y
-   pkg install -y git
-   ```
+Дар лоиҳа `gradle-wrapper.jar` бо мақсад дохил карда нашудааст (муҳити сохти ин лоиҳа ба интернет дастрасӣ надошт). Workflow (`.github/workflows/build-apk.yml`) онро худкор аз нав месозад пеш аз иҷрои `./gradlew`, бинобар ин ниёзе ба коре аз тарафи шумо нест — танҳо push кунед.
 
-2. Файли ZIP-и лоиҳаро дар телефон кушоед (масалан дар Downloads), сипас
-   ба Termux интиқол диҳед (агар Termux ба хотираи телефон дастрасӣ дошта
-   бошад):
-   ```bash
-   termux-setup-storage
-   cp -r /sdcard/Download/SensiPro ~/SensiPro
-   cd ~/SensiPro
-   ```
+## Фармонҳои Termux барои боркунӣ ба GitHub
 
-3. Репозиторияи GitHub-ро эҷод кунед (агар ҳанӯз накардаед) ва инро иҷро
-   кунед:
-   ```bash
-   git init
-   git add .
-   git commit -m "SensiPro initial commit"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/SensiPro.git
-   git push -u origin main
-   ```
-   (Ба ҷои `USERNAME` номи GitHub-и худро гузоред.)
+```bash
+cd SensiPro
+git init
+git remote add origin https://github.com/<username>/<repo>.git
+git add .
+git commit -m "Initial SensiPro project"
+git branch -M main
+git push -u origin main
+```
 
-4. Пас аз push, ба варақаи **Actions** дар GitHub (дар браузер) равед.
-   Сохтмони APK худкор оғоз мешавад ва тахминан 10-20 дақиқа тӯл мекашад.
-
-5. Пас аз анҷоми муваффақонаи сохтмон, ба поёни саҳифаи run-и мазкур
-   равед, дар қисми **Artifacts** файли `sensipro-apk`-ро зеркашӣ кунед,
-   онро кушоед (ZIP аст) ва APK-и дохилашро дар телефон насб кунед.
-
-## Иҷрои барнома мустақим дар Termux (бидуни APK, барои санҷиш)
-
-Агар хоҳед бе сохтани APK GUI-ро дар худи Termux бинед, ба
-**Termux:X11** ниёз доред (Termux ба таври хаттӣ экрани графикӣ надорад).
-Ин роҳ суст ва номунтазам аст — сохтани APK тавассути GitHub Actions
-(қадами боло) хеле боэътимодтар аст.
-
-## Дастрасиҳо (Permissions)
-
-Барнома ҳангоми бори аввал кушода шудан дастрасии хотираро (барои
-хондани маълумоти дастгоҳ) дархост мекунад. Ин дастрасӣ танҳо барои
-хониш истифода мешавад.
-
-## Огоҳӣ
-
-Арзишҳои ҳассосият тавсиявӣ мебошанд ва аз рӯи алгоритми дохилии
-барнома (RAM, версияи Android, хотира) ҳисоб мешаванд. Онҳо бояд дар
-худи бозӣ дастӣ ворид карда шаванд.
+Пас аз push, ба саҳифаи "Actions"-и репозиторий гузаред — workflow "Build APK" худкор оғоз мешавад ва APK-ро ҳамчун artifact бо номи `SensiPro-debug` пешниҳод мекунад.

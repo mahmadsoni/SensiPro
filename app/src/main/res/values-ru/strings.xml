@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SensiPro</string>
+    <string name="tagline">Персональный помощник по чувствительности</string>
+
+    <string name="onboarding_welcome_title">Добро пожаловать в SensiPro</string>
+    <string name="onboarding_welcome_subtitle">Персональный помощник чувствительности для Free Fire</string>
+    <string name="onboarding_info_title">Что мы анализируем</string>
+    <string name="onboarding_info_body">SensiPro анализирует модель устройства, RAM, версию Android, экран и частоту обновления, чтобы предложить настройки чувствительности.</string>
+    <string name="onboarding_privacy_title">Ваша конфиденциальность</string>
+    <string name="onboarding_privacy_body">Данные устройства обрабатываются только локально на телефоне. Ничего не отправляется на сервер.</string>
+    <string name="onboarding_analyze_button">Анализировать устройство</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_skip">Пропустить</string>
+
+    <string name="device_profile_title">Профиль устройства</string>
+    <string name="manufacturer">Производитель</string>
+    <string name="model">Модель</string>
+    <string name="android_version">Версия Android</string>
+    <string name="sdk_version">SDK</string>
+    <string name="cpu_info">Процессор</string>
+    <string name="total_ram">RAM (всего)</string>
+    <string name="available_ram">RAM (доступно)</string>
+    <string name="total_storage">Память (всего)</string>
+    <string name="available_storage">Память (доступно)</string>
+    <string name="screen_resolution">Разрешение экрана</string>
+    <string name="screen_density">Плотность экрана</string>
+    <string name="refresh_rate">Частота обновления</string>
+    <string name="performance_score">Индекс производительности</string>
+    <string name="not_available">Недоступно</string>
+
+    <string name="select_play_style">Выберите стиль игры</string>
+    <string name="select_combat_distance">Выберите дистанцию боя</string>
+    <string name="profile_close_range">Ближний бой</string>
+    <string name="profile_long_range">Дальний бой</string>
+    <string name="profile_balanced">Сбалансированный</string>
+    <string name="profile_custom">Свой</string>
+    <string name="generate_button">Получить рекомендацию</string>
+    <string name="smart_tune">Умная настройка</string>
+    <string name="smart_tune_stable">Стабильнее</string>
+    <string name="smart_tune_faster_drag">Быстрее разворот</string>
+    <string name="smart_tune_close_control">Контроль ближнего боя</string>
+    <string name="smart_tune_long_control">Контроль дальнего боя</string>
+    <string name="smart_tune_balanced">Сбалансированно</string>
+
+    <string name="result_title">Результат рекомендации</string>
+    <string name="sensitivity_general">Общая</string>
+    <string name="sensitivity_red_dot">Red Dot</string>
+    <string name="sensitivity_2x">2x прицел</string>
+    <string name="sensitivity_4x">4x прицел</string>
+    <string name="sensitivity_sniper">Снайпер</string>
+    <string name="sensitivity_free_look">Свободный обзор</string>
+    <string name="dpi_recommendation">Рекомендация DPI</string>
+    <string name="dpi_current">Текущий DPI</string>
+    <string name="dpi_range">Рекомендуемый диапазон</string>
+    <string name="dpi_reason">Причина рекомендации</string>
+    <string name="copy_settings">Копировать</string>
+    <string name="save_profile">Сохранить</string>
+    <string name="share">Поделиться</string>
+    <string name="recalculate">Пересчитать</string>
+    <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="profile_saved">Профиль сохранён</string>
+
+    <string name="history_title">История</string>
+    <string name="history_empty">История пуста</string>
+    <string name="delete">Удалить</string>
+    <string name="clear_all">Очистить всё</string>
+    <string name="clear_all_confirm">Вы уверены, что хотите удалить всю историю?</string>
+    <string name="cancel">Отмена</string>
+    <string name="confirm">Подтвердить</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="language">Язык</string>
+    <string name="theme">Тема</string>
+    <string name="default_profile">Профиль по умолчанию</string>
+    <string name="haptic_feedback">Тактильная отдача</string>
+    <string name="animations">Анимации</string>
+    <string name="privacy_info">О конфиденциальности</string>
+    <string name="about_app">О SensiPro</string>
+    <string name="lang_tajik">Таджикский</string>
+    <string name="lang_russian">Русский</string>
+    <string name="lang_english">Английский</string>
+
+    <string name="nav_home">Главная</string>
+    <string name="nav_history">История</string>
+    <string name="nav_settings">Настройки</string>
+
+    <string name="disclaimer">SensiPro только анализирует ваше устройство и даёт рекомендации. Это не читерская программа и она не изменяет файлы игры.</string>
+</resources>

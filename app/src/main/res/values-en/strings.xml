@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SensiPro</string>
+    <string name="tagline">Personalized sensitivity assistant</string>
+
+    <string name="onboarding_welcome_title">Welcome to SensiPro</string>
+    <string name="onboarding_welcome_subtitle">Personalized sensitivity assistant for Free Fire</string>
+    <string name="onboarding_info_title">What we analyze</string>
+    <string name="onboarding_info_body">SensiPro analyzes your device model, RAM, Android version, screen and refresh rate to suggest sensitivity settings.</string>
+    <string name="onboarding_privacy_title">Your privacy</string>
+    <string name="onboarding_privacy_body">Your device information is processed locally. Nothing is sent to a server.</string>
+    <string name="onboarding_analyze_button">Analyze Device</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_skip">Skip</string>
+
+    <string name="device_profile_title">Device Profile</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="android_version">Android Version</string>
+    <string name="sdk_version">SDK</string>
+    <string name="cpu_info">CPU</string>
+    <string name="total_ram">Total RAM</string>
+    <string name="available_ram">Available RAM</string>
+    <string name="total_storage">Total Storage</string>
+    <string name="available_storage">Available Storage</string>
+    <string name="screen_resolution">Screen Resolution</string>
+    <string name="screen_density">Screen Density</string>
+    <string name="refresh_rate">Refresh Rate</string>
+    <string name="performance_score">Performance Score</string>
+    <string name="not_available">Not available</string>
+
+    <string name="select_play_style">Select play style</string>
+    <string name="select_combat_distance">Select combat distance</string>
+    <string name="profile_close_range">Close Range</string>
+    <string name="profile_long_range">Long Range</string>
+    <string name="profile_balanced">Balanced</string>
+    <string name="profile_custom">Custom</string>
+    <string name="generate_button">Get Recommendation</string>
+    <string name="smart_tune">Smart Tune</string>
+    <string name="smart_tune_stable">More stable</string>
+    <string name="smart_tune_faster_drag">Faster drag</string>
+    <string name="smart_tune_close_control">Better close-range control</string>
+    <string name="smart_tune_long_control">Better long-range control</string>
+    <string name="smart_tune_balanced">Balanced</string>
+
+    <string name="result_title">Recommendation Result</string>
+    <string name="sensitivity_general">General</string>
+    <string name="sensitivity_red_dot">Red Dot</string>
+    <string name="sensitivity_2x">2x Scope</string>
+    <string name="sensitivity_4x">4x Scope</string>
+    <string name="sensitivity_sniper">Sniper</string>
+    <string name="sensitivity_free_look">Free Look</string>
+    <string name="dpi_recommendation">DPI Recommendation</string>
+    <string name="dpi_current">Current DPI</string>
+    <string name="dpi_range">Recommended Range</string>
+    <string name="dpi_reason">Why this was selected</string>
+    <string name="copy_settings">Copy settings</string>
+    <string name="save_profile">Save profile</string>
+    <string name="share">Share</string>
+    <string name="recalculate">Recalculate</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="profile_saved">Profile saved</string>
+
+    <string name="history_title">History</string>
+    <string name="history_empty">History is empty</string>
+    <string name="delete">Delete</string>
+    <string name="clear_all">Clear all</string>
+    <string name="clear_all_confirm">Are you sure you want to delete all history?</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="default_profile">Default profile</string>
+    <string name="haptic_feedback">Haptic feedback</string>
+    <string name="animations">Animations</string>
+    <string name="privacy_info">Privacy information</string>
+    <string name="about_app">About SensiPro</string>
+    <string name="lang_tajik">Tajik</string>
+    <string name="lang_russian">Russian</string>
+    <string name="lang_english">English</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="disclaimer">SensiPro only analyzes your device and gives recommendations. It is not a cheat program and it does not modify any game files.</string>
+</resources>

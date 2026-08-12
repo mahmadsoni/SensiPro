@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SensiPro</string>
+    <string name="tagline">Ёвари шахсии сенситивӣ</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">SensiPro ба шумо хуш омад</string>
+    <string name="onboarding_welcome_subtitle">Ёвари шахсии сенситивӣ барои Free Fire</string>
+    <string name="onboarding_info_title">Мо чиро таҳлил мекунем</string>
+    <string name="onboarding_info_body">SensiPro модели дастгоҳи шумо, RAM, версияи Android, экран ва суръати навсозиро таҳлил мекунад, то танзимоти сенситивӣ пешниҳод кунад.</string>
+    <string name="onboarding_privacy_title">Махфияти шумо</string>
+    <string name="onboarding_privacy_body">Маълумоти дастгоҳи шумо танҳо дар дохили телефон коркард мешавад. Ҳеҷ чиз ба сервер фиристода намешавад.</string>
+    <string name="onboarding_analyze_button">Дастгоҳро таҳлил кунед</string>
+    <string name="onboarding_next">Минбаъд</string>
+    <string name="onboarding_skip">Гузаштан</string>
+
+    <!-- Device profile -->
+    <string name="device_profile_title">Профили дастгоҳ</string>
+    <string name="manufacturer">Истеҳсолкунанда</string>
+    <string name="model">Модел</string>
+    <string name="android_version">Версияи Android</string>
+    <string name="sdk_version">SDK</string>
+    <string name="cpu_info">Протсессор</string>
+    <string name="total_ram">RAM (умумӣ)</string>
+    <string name="available_ram">RAM (дастрас)</string>
+    <string name="total_storage">Ҳофиза (умумӣ)</string>
+    <string name="available_storage">Ҳофиза (дастрас)</string>
+    <string name="screen_resolution">Ҳалли экран</string>
+    <string name="screen_density">Зичии экран</string>
+    <string name="refresh_rate">Суръати навсозӣ</string>
+    <string name="performance_score">Нишондиҳандаи иҷрокунӣ</string>
+    <string name="not_available">Дастнорас</string>
+
+    <!-- Home / profile selection -->
+    <string name="select_play_style">Услуби бозиро интихоб кунед</string>
+    <string name="select_combat_distance">Масофаи ҷангро интихоб кунед</string>
+    <string name="profile_close_range">Ҷанги наздик</string>
+    <string name="profile_long_range">Ҷанги дур</string>
+    <string name="profile_balanced">Мутавозин</string>
+    <string name="profile_custom">Шахсӣ</string>
+    <string name="generate_button">Тавсия гирифтан</string>
+    <string name="smart_tune">Танзими ҳушманд</string>
+    <string name="smart_tune_stable">Устувортар</string>
+    <string name="smart_tune_faster_drag">Гардиши тезтар</string>
+    <string name="smart_tune_close_control">Идораи наздиктар</string>
+    <string name="smart_tune_long_control">Идораи дуртар</string>
+    <string name="smart_tune_balanced">Мутавозин</string>
+
+    <!-- Result screen -->
+    <string name="result_title">Натиҷаи тавсия</string>
+    <string name="sensitivity_general">Умумӣ</string>
+    <string name="sensitivity_red_dot">Ред Дот</string>
+    <string name="sensitivity_2x">2x Скоп</string>
+    <string name="sensitivity_4x">4x Скоп</string>
+    <string name="sensitivity_sniper">Снайпер</string>
+    <string name="sensitivity_free_look">Назари озод</string>
+    <string name="dpi_recommendation">Тавсияи DPI</string>
+    <string name="dpi_current">DPI-и ҳозира</string>
+    <string name="dpi_range">Диапазони тавсияшуда</string>
+    <string name="dpi_reason">Сабаби тавсия</string>
+    <string name="copy_settings">Нусхабардорӣ</string>
+    <string name="save_profile">Захира кардан</string>
+    <string name="share">Мубодила</string>
+    <string name="recalculate">Аз нав ҳисоб кардан</string>
+    <string name="copied_to_clipboard">Ба ҳофизаи муваққатӣ нусхабардорӣ шуд</string>
+    <string name="profile_saved">Профил захира шуд</string>
+
+    <!-- History -->
+    <string name="history_title">Таърих</string>
+    <string name="history_empty">Таърих холист</string>
+    <string name="delete">Нест кардан</string>
+    <string name="clear_all">Пок кардани ҳама</string>
+    <string name="clear_all_confirm">Оё шумо мутмаин ҳастед, ки ҳамаи таърихро нест кунед?</string>
+    <string name="cancel">Бекор кардан</string>
+    <string name="confirm">Тасдиқ</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Танзимот</string>
+    <string name="language">Забон</string>
+    <string name="theme">Мавзӯъ</string>
+    <string name="default_profile">Профили пешфарз</string>
+    <string name="haptic_feedback">Ларзиши ламсӣ</string>
+    <string name="animations">Аниматсияҳо</string>
+    <string name="privacy_info">Маълумот дар бораи махфият</string>
+    <string name="about_app">Дар бораи SensiPro</string>
+    <string name="lang_tajik">Тоҷикӣ</string>
+    <string name="lang_russian">Русӣ</string>
+    <string name="lang_english">Англисӣ</string>
+
+    <!-- Nav -->
+    <string name="nav_home">Асосӣ</string>
+    <string name="nav_history">Таърих</string>
+    <string name="nav_settings">Танзимот</string>
+
+    <string name="disclaimer">SensiPro фақат дастгоҳи шуморо таҳлил карда, тавсия медиҳад. Ин барномаи firibgar (cheat) нест ва ҳеҷ файли бозиро тағйир намедиҳад.</string>
+</resources>
