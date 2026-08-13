@@ -31,12 +31,19 @@ object SensitivityEngine {
         // Base sensitivity derives from screen size, density and performance:
         // larger / denser screens with strong performance can comfortably
         // support slightly higher base sensitivity for faster tracking.
+        // Calibrated so a typical mid-range 60Hz device lands general/red-dot
+        // sensitivity in the range competitive Free Fire players commonly use
+        // (roughly 80-110 on the modern 0-200 scale), rather than being
+        // dragged down by a low refresh rate alone.
         val densityFactor = (deviceInfo.densityDpi.coerceIn(120, 560) / 420.0)
         val screenFactor = (deviceInfo.screenSizeInches.coerceIn(4.5, 8.0) / 6.5)
-        val refreshFactor = (deviceInfo.refreshRateHz.coerceIn(60f, 144f) / 90f)
-        val perfFactor = 0.85 + (performanceScore / 100.0) * 0.3 // 0.85 - 1.15
+        // 60Hz devices (still the most common for Free Fire) start near parity
+        // (0.90) instead of being penalized to ~0.67; higher refresh rates give
+        // a modest bonus for smoother tracking, capping out at 144Hz.
+        val refreshFactor = 0.90 + ((deviceInfo.refreshRateHz.coerceIn(60f, 144f) - 60f).toDouble() / 84.0) * 0.30
+        val perfFactor = 0.90 + (performanceScore / 100.0) * 0.25 // 0.90 - 1.15
 
-        val base = 70.0 * densityFactor * screenFactor * refreshFactor * perfFactor
+        val base = 100.0 * densityFactor * screenFactor * refreshFactor * perfFactor
 
         // Profile shaping: close range favors faster general/red-dot turning,
         // long range favors finer scope control (lower scope sensitivity).
